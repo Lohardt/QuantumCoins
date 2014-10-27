@@ -1,0 +1,11 @@
+{
+    "conversion": {
+        "category": "master",
+        "sounds": [
+            {
+                "name": "conversion",
+                "stream": false
+            }
+        ]
+    }
+}
