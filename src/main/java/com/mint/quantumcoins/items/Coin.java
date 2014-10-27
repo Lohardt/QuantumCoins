@@ -1,4 +1,4 @@
-package quantumcoins.items;
+package com.mint.quantumcoins.items;
 
 import java.util.List;
 
@@ -9,10 +9,12 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import quantumcoins.QuantumCoins;
-import quantumcoins.core.SoundHandler;
-import quantumcoins.lib.QuantumRef;
-import quantumcoins.lib.QuantumSettings;
+
+import com.mint.quantumcoins.QuantumCoins;
+import com.mint.quantumcoins.core.SoundHandler;
+import com.mint.quantumcoins.lib.QuantumRef;
+import com.mint.quantumcoins.lib.QuantumSettings;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

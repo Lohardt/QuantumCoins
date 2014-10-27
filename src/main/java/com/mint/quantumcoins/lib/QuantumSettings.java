@@ -1,4 +1,4 @@
-package quantumcoins.lib;
+package com.mint.quantumcoins.lib;
 
 public class QuantumSettings
 {

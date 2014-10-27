@@ -1,12 +1,12 @@
-package quantumcoins.core;
+package com.mint.quantumcoins.core;
 
 import java.io.File;
 import java.util.logging.Level;
 
-import quantumcoins.QuantumCoins;
-import quantumcoins.lib.QuantumSettings;
-import static quantumcoins.lib.QuantumSettings.defaults.*;
-import static quantumcoins.lib.QuantumSettings.settings.*;
+import com.mint.quantumcoins.QuantumCoins;
+import com.mint.quantumcoins.lib.QuantumSettings;
+import static com.mint.quantumcoins.lib.QuantumSettings.defaults.*;
+import static com.mint.quantumcoins.lib.QuantumSettings.settings.*;
 import cpw.mods.fml.common.FMLLog;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
