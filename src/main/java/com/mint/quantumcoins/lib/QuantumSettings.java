@@ -1,4 +1,4 @@
-package quantumcoins.lib;
+package com.mint.quantumcoins.lib;
 
 public class QuantumSettings
 {
@@ -9,12 +9,28 @@ public class QuantumSettings
 		public static final String DEFAULT_COIN_LETTER = "M";
 		public static final int DEFAULT_CONVERT_AMOUNT = 5;
 
-		public static final String[] DEFAULT_COIN_TYPE_NAME = { "Stone", "Iron", "Gold", "Diamond", "Admin" };
+		public static final String[] DEFAULT_COIN_TYPE_NAME = { "Stone", "Iron", "Gold", "Diamond", "Special" };
 		public static final String[] DEFAULT_COIN_NAME_COLOR = { "7", "F", "E", "9", "D"};
 		public static final String[] DEFAULT_COIN_COLOR = { "AAAAAA", "FFFFFF", "FFFF55", "55FFFF", "123456" };
 		public static final String[] DEFAULT_COIN_TYPE_INFO = { "none",
 													  			"Worth 5 Stone Coins", "Worth 5 Iron Coins",
-													  			"Worth 5 Gold Coins", "Special token given out by server admins", };
+													  			"Worth 5 Gold Coins", "none", };
+		
+		//Mobs//
+		public static final boolean DEFAULT_ZOMBIE_DROP = true;
+		public static final int DEFAULT_ZOMBIE_CHANCE = 25;
+		
+		public static final boolean DEFAULT_SKELETON_DROP = true;
+		public static final int DEFAULT_SKELETON_CHANCE = 20;
+		
+		public static final boolean DEFAULT_SPIDER_DROP = true;
+		public static final int DEFAULT_SPIDER_CHANCE = 15;
+		
+		public static final boolean DEFAULT_CAVE_SPIDER_DROP = true;
+		public static final int DEFAULT_CAVE_SPIDER_CHANCE = 20;
+		
+		public static final boolean DEFAULT_ENDERMAN_DROP = true;
+		public static final int DEFAULT_ENDERMAN_CHANCE = 35;
 	}
 	
 	public static class settings
@@ -29,5 +45,21 @@ public class QuantumSettings
 		public static String[] coinNameColor;
 		public static String[] coinColor;
 		public static String[] coinTypeInfo;
+		
+		//Mobs//
+		public static boolean zombieDrop;
+		public static int zombieChance;
+		
+		public static boolean skeletonDrop;
+		public static int skeletonChance;
+		
+		public static boolean spiderDrop;
+		public static int spiderChance;
+		
+		public static boolean caveSpiderDrop;
+		public static int caveSpiderChance;
+		
+		public static boolean endermanDrop;
+		public static int endermanChance;
 	}
 }

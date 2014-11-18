@@ -1,13 +1,17 @@
-package quantumcoins;
+package com.mint.quantumcoins;
 
 import java.util.logging.Logger;
 
 import net.minecraft.creativetab.CreativeTabs;
-import quantumcoins.core.ConfigHelper;
-import quantumcoins.core.QuantumTab;
-import quantumcoins.core.proxy.IProxy;
-import quantumcoins.items.ItemHelper;
-import quantumcoins.lib.QuantumRef;
+import net.minecraftforge.common.MinecraftForge;
+
+import com.mint.quantumcoins.core.ConfigHelper;
+import com.mint.quantumcoins.core.QuantumEvents;
+import com.mint.quantumcoins.core.QuantumTab;
+import com.mint.quantumcoins.core.proxy.IProxy;
+import com.mint.quantumcoins.items.ItemHelper;
+import com.mint.quantumcoins.lib.QuantumRef;
+
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -45,7 +49,8 @@ public class QuantumCoins
 		
 		ConfigHelper.init(event.getSuggestedConfigurationFile());
 		
-		//proxy.registerSoundHandler();
+		MinecraftForge.EVENT_BUS.register(new QuantumEvents());
+		
 	}
 
 	@Mod.EventHandler

@@ -1,12 +1,12 @@
-package quantumcoins.core;
+package com.mint.quantumcoins.core;
 
 import java.io.File;
 import java.util.logging.Level;
 
-import quantumcoins.QuantumCoins;
-import quantumcoins.lib.QuantumSettings;
-import static quantumcoins.lib.QuantumSettings.defaults.*;
-import static quantumcoins.lib.QuantumSettings.settings.*;
+import com.mint.quantumcoins.QuantumCoins;
+import com.mint.quantumcoins.lib.QuantumSettings;
+import static com.mint.quantumcoins.lib.QuantumSettings.defaults.*;
+import static com.mint.quantumcoins.lib.QuantumSettings.settings.*;
 import cpw.mods.fml.common.FMLLog;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
@@ -72,12 +72,12 @@ public class ConfigHelper
 
 			Property coinNameP = config.get("Items", "coin_name", DEFAULT_COIN_NAME);
 			coinName = coinNameP.getString();
-			coinNameP.comment = "Name for the coins";
+			coinNameP.comment = "Name for the coins.";
 			
 			Property coinLetterP = config.get("Items", "coin_letter", DEFAULT_COIN_LETTER);
 			coinLetter = coinLetterP.getString().toLowerCase();
 			coinLetterP.comment = "Letter on the coin. You can use A-Z, 'dollar', 'cent', 'yen', and 'euro' without the quotes." + "\n" +
-								"If you dont want a letter on it at all you can use 'base' without the quotes";
+								"If you dont want a letter on it at all you can use 'base' without the quotes.";
 			
 			Property convertAmountP = config.get("Items", "convert_amount", DEFAULT_CONVERT_AMOUNT);
 			convertAmount = convertAmountP.getInt();
@@ -88,7 +88,7 @@ public class ConfigHelper
 			// Load each config field
 			coinTypeName = populateFromConfig("Coin_Types", "coin_type_", DEFAULT_COIN_TYPE_NAME, "[name]");
 			
-			coinNameColor = populateFromConfig("Coin_Name_Colors", "coin_name_color_", DEFAULT_COIN_NAME_COLOR, "0");
+			coinNameColor = populateFromConfig("Coin_Name_Colors", "coin_name_color_", DEFAULT_COIN_NAME_COLOR, "8");
 			
 			coinColor = populateFromConfig("Coin_Colors", "coin_color_", DEFAULT_COIN_COLOR , "FFFFFF");
 			
