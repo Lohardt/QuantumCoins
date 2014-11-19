@@ -1,4 +1,4 @@
-package com.mint.quantumcoins.items;
+package quantumcoins.items;
 
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -10,11 +10,6 @@ public class ItemHelper
 	public static void init()
 	{
 		coin = new Coin();
-	}
-	
-	public static void registerCrafting()
-	{
-		
 	}
 	
 	public static void registerItems(QuantumItems item)
