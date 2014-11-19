@@ -6,7 +6,10 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 
 import com.mint.quantumcoins.core.ConfigHelper;
+<<<<<<< HEAD
 import com.mint.quantumcoins.core.DropHelper;
+=======
+>>>>>>> origin/master
 import com.mint.quantumcoins.core.QuantumEvents;
 import com.mint.quantumcoins.core.QuantumTab;
 import com.mint.quantumcoins.core.proxy.IProxy;
@@ -51,6 +54,10 @@ public class QuantumCoins
 		ConfigHelper.init(event.getSuggestedConfigurationFile());
 		
 		MinecraftForge.EVENT_BUS.register(new QuantumEvents());
+<<<<<<< HEAD
+=======
+		
+>>>>>>> origin/master
 	}
 
 	@Mod.EventHandler

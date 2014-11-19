@@ -17,6 +17,7 @@ public class QuantumSettings
 													  			"Worth 5 Gold Coins", "none", };
 		
 		//Mobs//
+<<<<<<< HEAD
 		public static final boolean DEFAULT_ZOMBIE_DROP_PERMISSION = true;
 		public static final int DEFAULT_ZOMBIE_DROP_CHANCE = 25;
 		public static final int DEFAULT_ZOMBIE_DROP_MAX = 3;
@@ -41,6 +42,22 @@ public class QuantumSettings
 		public static final int DEFAULT_ENDERMAN_DROP_CHANCE = 35;
 		public static final int DEFAULT_ENDERMAN_DROP_MAX = 5;
 		public static final int DEFAULT_ENDERMAN_DROPPED_META = 0;
+=======
+		public static final boolean DEFAULT_ZOMBIE_DROP = true;
+		public static final int DEFAULT_ZOMBIE_CHANCE = 25;
+		
+		public static final boolean DEFAULT_SKELETON_DROP = true;
+		public static final int DEFAULT_SKELETON_CHANCE = 20;
+		
+		public static final boolean DEFAULT_SPIDER_DROP = true;
+		public static final int DEFAULT_SPIDER_CHANCE = 15;
+		
+		public static final boolean DEFAULT_CAVE_SPIDER_DROP = true;
+		public static final int DEFAULT_CAVE_SPIDER_CHANCE = 20;
+		
+		public static final boolean DEFAULT_ENDERMAN_DROP = true;
+		public static final int DEFAULT_ENDERMAN_CHANCE = 35;
+>>>>>>> origin/master
 	}
 	
 	public static class settings
@@ -57,6 +74,7 @@ public class QuantumSettings
 		public static String[] coinTypeInfo;
 		
 		//Mobs//
+<<<<<<< HEAD
 		public static boolean zombieDropPermission;
 		public static int zombieDropChance;
 		public static int zombieDropMax;
@@ -81,5 +99,21 @@ public class QuantumSettings
 		public static int endermanDropChance;
 		public static int endermanDropMax;
 		public static int endermanDroppedMeta;
+=======
+		public static boolean zombieDrop;
+		public static int zombieChance;
+		
+		public static boolean skeletonDrop;
+		public static int skeletonChance;
+		
+		public static boolean spiderDrop;
+		public static int spiderChance;
+		
+		public static boolean caveSpiderDrop;
+		public static int caveSpiderChance;
+		
+		public static boolean endermanDrop;
+		public static int endermanChance;
+>>>>>>> origin/master
 	}
 }

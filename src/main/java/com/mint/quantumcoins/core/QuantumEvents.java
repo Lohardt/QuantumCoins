@@ -20,6 +20,7 @@ public class QuantumEvents
 	@SubscribeEvent
 	public void mobDrop(LivingDropsEvent event)
 	{
+<<<<<<< HEAD
 		if (event.entityLiving instanceof EntityLiving)
 		{
 			if(event.recentlyHit == false) return;
@@ -38,6 +39,30 @@ public class QuantumEvents
 	}
 	
 	public boolean getDropChance(int percent)
+=======
+		ItemStack droppedCoin = new ItemStack(ItemHelper.coin, 1, 0);
+		
+		if(event.recentlyHit == false) return;
+		
+		EntityLiving entity = (EntityLiving)event.entityLiving;
+		String entityName = (String) EntityList.classToStringMapping.get(entity.getClass());
+		
+		if(event.entityLiving instanceof EntityZombie)
+		{
+			if(QuantumSettings.settings.zombieDrop == true)
+			{
+				if(dropChance(QuantumSettings.settings.zombieChance) == true)
+				{
+					event.drops.add(new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ));
+				}
+			}
+		}
+		
+		
+	}
+	
+	public boolean dropChance(int percent)
+>>>>>>> origin/master
 	{
 		Random chance = new Random();
 		if(percent <= chance.nextInt(101)) return true;
