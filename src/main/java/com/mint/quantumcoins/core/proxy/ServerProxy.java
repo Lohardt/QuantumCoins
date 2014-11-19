@@ -1,4 +1,4 @@
-package quantumcoins.core.proxy;
+package com.mint.quantumcoins.core.proxy;
 
 public class ServerProxy extends CommonProxy
 {

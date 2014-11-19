@@ -1,8 +1,9 @@
-package quantumcoins.core;
+package com.mint.quantumcoins.core;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.world.World;
-import quantumcoins.lib.QuantumRef;
+
+import com.mint.quantumcoins.lib.QuantumRef;
 
 public class SoundHandler
 {

@@ -1,9 +1,11 @@
-package quantumcoins.items;
+package com.mint.quantumcoins.items;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import quantumcoins.lib.QuantumRef;
+
+import com.mint.quantumcoins.lib.QuantumRef;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
