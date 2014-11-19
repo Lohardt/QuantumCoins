@@ -1,8 +1,9 @@
-package quantumcoins.core;
+package com.mint.quantumcoins.core;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import quantumcoins.items.ItemHelper;
+
+import com.mint.quantumcoins.items.ItemHelper;
 
 public class QuantumTab extends CreativeTabs
 {

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "quantumcoins",
+  "name": "Quantum Coins",
+  "description": "Extremely customizable physical currency mod. Aimed more at server economies then SP use.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Mint"],
+  "credits": "None ATM",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
